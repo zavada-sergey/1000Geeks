@@ -1,0 +1,140 @@
+﻿html {
+    background-color: #f1f1f1;
+}
+
+.gallery-wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 24px;
+    padding-bottom: 7px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 13px 0px #0000000a;
+    text-align: center;
+}
+
+.gallery-image {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 8px 0px #0000002b;
+    position: relative;
+}
+
+.gallery-image__left,
+.gallery-image__right {
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(21, 21, 21, 0.59);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: all linear 0.12s;
+    z-index: 9;
+}
+
+    .gallery-image__left:hover {
+        opacity: 0.8;
+    }
+
+    .gallery-image__right:hover {
+        opacity: 0.8;
+    }
+
+    .gallery-image__right:hover {
+        outline: none;
+    }
+
+    .gallery-image__left:focus {
+        outline: none;
+    }
+
+.gallery-image__left {
+    position: absolute;
+    left: 10px;
+}
+
+    .gallery-image__left .arrow {
+        transform: rotate(135deg);
+        -webkit-transform: rotate(135deg);
+        margin-left: 8px;
+    }
+
+.gallery-image__right {
+    position: absolute;
+    right: 10px;
+}
+
+    .gallery-image__right .arrow {
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        margin-right: 8px;
+    }
+
+.arrow {
+    border: solid white;
+    border-width: 0 6px 6px 0;
+    display: inline-block;
+    padding: 9px;
+    opacity: 0.9;
+}
+
+.gallery-image img {
+    max-width: 100%;
+}
+
+.upload-button {
+    background-color: #F44730;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 8px 57px;
+    line-height: 60px;
+    text-align: center;
+    font-family: Arial;
+    transition: all linear 0.12s;
+}
+
+    .upload-button:hover {
+        background-color: #F44770;
+    }
+
+    .upload-button input {
+        display: none;
+    }
+
+@media screen and (max-width: 1000px) {
+    .gallery-wrapper {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .gallery-image {
+        height: auto;
+    }
+
+    .gallery-image__left,
+    .gallery-image__right {
+        opacity: 0.8;
+        transform: scale(0.6);
+    }
+
+    .gallery-image__left {
+        left: 0;
+    }
+
+    .gallery-image__right {
+        right: 0;
+    }
+}
+
+.swiper-container {
+    width: 100%;
+}

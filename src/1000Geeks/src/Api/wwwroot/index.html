@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>1000Geeks Web GUI</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css" asp-append-version="true">
+  <link rel="stylesheet" href="css/index.css" />
+</head>
+<body>
+  <div class="container">
+    <main role="main" class="pb-3">
+
+      <div class="gallery-wrapper">
+        <div class="gallery-image" >
+          <div id="pictures-container"></div>
+          <div class="gallery-image__right">
+            <i class="arrow"></i>
+          </div>
+          <div class="gallery-image__left">
+            <i class="arrow"></i>
+          </div>
+        </div>
+
+        <form name="form-upload-picture">
+          <label class="upload-button">
+            Загрузить
+            <input id="upload-picture" type="file" name="file" />
+          </label>
+        </form>
+      </div>
+
+    </main>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" asp-append-version="true"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js" asp-append-version="true"></script>
+  <script src="js/index.js" asp-append-version="true"></script>
+  </body>
+</html>
